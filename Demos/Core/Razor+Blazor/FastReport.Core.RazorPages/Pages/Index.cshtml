@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="title">
+    <a href="/"><span>FastReport.Web</span><span style="opacity:0.35"> for Core | Razor</span></a>
+</div>
+
+<div class="menu">
+    <a href="http://www.fast-report.com/en/product/fast-report-net/">About FastReport .NET</a>
+    <a href="http://www.fast-report.com/en/download/fast-report-net/">Download Demo</a>
+    <a href="http://www.fast-report.com/en/buy/#!/.Net%20%28MS%20Visual%20Studio%29/FastReport.Net/">Buy FastReport .NET</a>
+</div>
+
+<div class="container">
+    <div class="reports">
+        @foreach (var item in Model.ReportsList.Select((value, i) => new { value, i }))
+        {
+            <a href="?report=@item.i">@item.value</a>
+        }
+    </div>
+    <div class="webreport">
+        @await Model.WebReport.Render()
+    </div>
+    <footer>&copy; @DateTime.Now.Year - Fast Reports, Inc.</footer>
+</div>

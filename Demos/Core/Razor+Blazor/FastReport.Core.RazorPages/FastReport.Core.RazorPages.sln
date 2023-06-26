@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastReport.Core.RazorPages", "FastReport.Core.RazorPages.csproj", "{40407A09-529C-45C2-8B2D-A735ADBFDD1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Academic|Any CPU = Academic|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Academic|Any CPU.ActiveCfg = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Academic|Any CPU.Build.0 = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40407A09-529C-45C2-8B2D-A735ADBFDD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {600D88E3-6F3D-47F7-A5AB-A6F19EA837B7}
+	EndGlobalSection
+EndGlobal

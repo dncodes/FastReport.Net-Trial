@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(NetFrameworkMinimum)</TargetFrameworks>
+    <PackageLicenseUrl>https://www.fast-report.com/en/product/fast-report-net/license</PackageLicenseUrl>
+    <Description>Represents a connection to Oracle database. Shared Plugin for all versions of FastReport product: FastReport .NET, FastReport.Core, FastReport.OpenSource, FastReport.CoreWin (.Net Core 3.1 and .Net 5 Windows).
+
+Requirements: Any FastReport $(Version)+ package, NuGet Client 3.4.4+</Description>
+    <PackageId>FastReport.Data.OracleODPCore</PackageId>
+    <PackageTags>reporting, oracle, core, connection, reports</PackageTags>
+    <Version>1.0.0</Version>
+    <Configurations>Debug;Release;</Configurations>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <Import Project="Shared.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FastReport\FastReport.csproj">
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

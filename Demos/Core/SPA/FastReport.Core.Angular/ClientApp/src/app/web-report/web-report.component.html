@@ -1,0 +1,133 @@
+<body>
+  <div class="header">
+    <span class="demo-fast-report"><b>FastReports.Core</b> for Web .NET with Angular Demo</span>
+    <div class="links">
+      <a target="_blank" href="http://www.fast-report.com/en/product/fast-report-net/">About FastReport</a>
+      <a target="_blank" href="http://www.fast-report.com/en/download/fast-report-net/">Download Demo</a>
+      <a target="_blank" href="http://www.fast-report.com/en/buy/#!/.Net%20%28MS%20Visual%20Studio%29/FastReport.Net/">Buy FastReport.Net</a>
+    </div>
+    <a href="http://www.fast-report.com/en/product/fast-report-net/" target="_blank">
+      <img class="fr-logo" alt="FR logo" src="./assets/logo.png">
+    </a>
+  </div>
+  <div class="container">
+    <div class="nav-menu">
+      <div class="nav-menu-elements">
+        <div class="input_report">
+          <input checked="true" type="radio" id="reportChoice1"
+                 name="report" value="Matrix" (click)="this.report = 'Simple List'">
+          <label for="reportChoice1">Simple List</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice2"
+                 name="report" value="Labels" (click)="this.report = 'Labels'">
+          <label for="reportChoice2">Labels</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice3"
+                 name="report" value="Master-Detail" (click)="this.report = 'Master-Detail'">
+          <label for="reportChoice3">Master-Detail</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice4"
+                 name="report" value="Badges" (click)="this.report = 'Badges'">
+          <label for="reportChoice4">Badges</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice5"
+                 name="report" value="Advanced Matrix" (click)="this.report = 'Advanced Matrix'">
+          <label for="reportChoice5">Advanced Matrix</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice6"
+                 name="report" value="Interactive Report, 2-in-1" (click)="this.report = 'Interactive Report, 2-in-1'">
+          <label for="reportChoice6">Interactive Report, 2-in-1</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice7"
+                 name="report" value="Hyperlinks, Bookmarks" (click)="this.report = 'Hyperlinks, Bookmarks'">
+          <label for="reportChoice7">Hyperlinks, Bookmarks</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice8"
+                 name="report" value="Outline" (click)="this.report = 'Outline'">
+          <label for="reportChoice8">Outline</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice9"
+                 name="report" value="Complex (Hyperlinks, Outline, TOC)" (click)="this.report = 'Complex (Hyperlinks, Outline, TOC)'">
+          <label for="reportChoice9">Complex (Hyperlinks, Outline, TOC)</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice10"
+                 name="report" value="Drill-Down Groups" (click)="this.report = 'Drill-Down Groups'">
+          <label for="reportChoice10">Drill-Down Groups</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice11"
+                 name="report" value="Mail Merge" (click)="this.report = 'Mail Merge'">
+          <label for="reportChoice11">Mail Merge</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice12"
+                 name="report" value="Polygon" (click)="this.report = 'Polygon'">
+          <label for="reportChoice12">Polygon</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice13"
+                 name="report" value="Chart" (click)="this.report = 'Chart'">
+          <label for="reportChoice13">Chart</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice14"
+                 name="report" value="Hello, FastReport!" (click)="this.report = 'Hello, FastReport!'">
+          <label for="reportChoice14">Hello, FastReport!</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice15"
+                 name="report" value="Print Entered Value" (click)="this.report = 'Print Entered Value'">
+          <label for="reportChoice15">Print Entered Value</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice16"
+                 name="report" value="Filtering with CheckedListBox" (click)="this.report = 'Filtering with CheckedListBox'">
+          <label for="reportChoice16">Filtering with CheckedListBox</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice17"
+                 name="report" value="Filtering with Ranges" (click)="this.report = 'Filtering with Ranges'">
+          <label for="reportChoice17">Filtering with Ranges</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice18"
+                 name="report" value="Cascaded Data Filtering" (click)="this.report = 'Cascaded Data Filtering'">
+          <label for="reportChoice18">Cascaded Data Filtering</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice19"
+                 name="report" value="Handle Dialog Forms" (click)="this.report = 'Handle Dialog Forms'">
+          <label for="reportChoice19">Handle Dialog Forms</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice20"
+                 name="report" value="Dialog Elements" (click)="this.report = 'Dialog Elements'">
+          <label for="reportChoice20">Dialog Elements</label>
+        </div>
+        <div class="input_report">
+          <input type="radio" id="reportChoice21"
+                 name="report" value="Barcode" (click)="this.report = 'Barcode'">
+          <label for="reportChoice21">Barcode</label>
+        </div>
+        <div>
+          <input type="button" (click)="Clicked()" value="Show Report" />
+        </div>
+      </div>
+    </div>
+    <div *ngIf="show">
+
+      <iframe class="iframe-report" id="report" [src]="url | safeUrl: 'resourceUrl'"></iframe>
+
+    </div>
+  </div>
+
+</body>

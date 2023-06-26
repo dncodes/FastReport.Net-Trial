@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+code {
+  color: #e01a76;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  width: 91.9rem;
+  background-color: white;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+}
+
+.links {
+  margin-left: 1rem;
+  font-size: 1.15rem;
+}
+
+  .links a {
+    color: black;
+    margin-left: 0.5rem;
+    font-weight: 150;
+  }
+
+  .links a:hover {
+    color: #0366d6;
+  }
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.input_report {
+  width: 300px;
+  font-weight: 250;
+  height: 35px;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.demo-fast-report {
+  margin-left: 6px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 275;
+  color: #0366d6;
+}
+
+.nav-menu {
+  display: flex;
+  color: black;
+  height: 100%;
+  width: 300px;
+  flex-direction: column;
+}
+
+  .nav-menu input[type="button"] {
+    background-color: #0366d6;
+    font-weight: 250;
+    outline: none;
+    border: none;
+    color: white;
+    width: 295px;
+  }
+
+.nav-menu input[type=radio] {
+  margin: 0px 10px 0px 5px;
+}
+
+.nav-menu-elements {
+  margin-top: 15px;
+  
+}
+
+.iframe-report {
+  border: none;
+  height: 1020px;
+  width: 1030px;
+  margin: -7px;
+}
+
+.fr-logo {
+  margin-top: 15px;
+  margin-left: 50px;
+  height: 64px;
+}

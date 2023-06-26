@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" TextQuality="Regular" ReportInfo.Name="FilterEmployees" ReportInfo.Author="Fast Reports Inc" ReportInfo.Description="Demonstrates a simple list report. To create it:&#13;&#10;- go to &quot;Data&quot; menu and select &quot;Choose Report Data...&quot; item to select a datasource;&#13;&#10;- go to &quot;Report|Configure Bands...&quot; menu to create the band structure;&#13;&#10;- return to the report page, doubleclick the data band to show its editor;&#13;&#10;- choose the datasource;&#13;&#10;- drag data from the Data Dictionary window to the band." ReportInfo.Created="01/17/2008 03:05:57" ReportInfo.Modified="03/03/2022 19:09:13" ReportInfo.CreatorVersion="1.0.0.0">
+  <Dictionary>
+    <TableDataSource Name="FilterEmployees" ReferenceName="NorthWind.FilterEmployees" DataType="System.Int32" Enabled="true" TableName="FilterEmployees">
+      <Column Name="Photo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="LastName" DataType="System.String"/>
+      <Column Name="FirstName" DataType="System.String"/>
+      <Column Name="HireDate" DataType="System.String"/>
+      <Column Name="City" DataType="System.String"/>
+      <Column Name="HoursWorked" DataType="System.Int32"/>
+      <Column Name="Sales" DataType="System.Int32"/>
+      <Column Name="Month" DataType="System.String"/>
+      <Column Name="Salary" DataType="System.Int32"/>
+    </TableDataSource>
+    <Relation Name="CategoriesProducts" ParentDataSource="null" ChildDataSource="null" ParentColumns="CategoryID" ChildColumns="CategoryID" Enabled="true"/>
+    <Relation Name="SuppliersProducts" ParentDataSource="null" ChildDataSource="null" ParentColumns="SupplierID" ChildColumns="SupplierID" Enabled="true"/>
+    <Relation Name="CustomersOrders" ParentDataSource="null" ChildDataSource="null" ParentColumns="CustomerID" ChildColumns="CustomerID" Enabled="true"/>
+    <Relation Name="ShippersOrders" ParentDataSource="null" ChildDataSource="null" ParentColumns="ShipperID" ChildColumns="ShipVia" Enabled="true"/>
+    <Relation Name="EmployeesOrders" ParentDataSource="null" ChildDataSource="null" ParentColumns="EmployeeID" ChildColumns="EmployeeID" Enabled="true"/>
+    <Relation Name="ProductsOrderDetails" ParentDataSource="null" ChildDataSource="null" ParentColumns="ProductID" ChildColumns="ProductID" Enabled="true"/>
+    <Relation Name="OrdersOrderDetails" ParentDataSource="null" ChildDataSource="null" ParentColumns="OrderID" ChildColumns="OrderID" Enabled="true"/>
+    <Parameter Name="Month" DataType="System.String" Expression="&quot;September&quot;"/>
+    <Parameter Name="Name" DataType="System.String" Expression="&quot;Nancy&quot;"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="56.7" CanGrow="true">
+      <TextObject Name="Text1" Left="-9.45" Top="18.9" Width="718.2" Height="28.35" Text="EMPLOYEES" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 14pt, style=Bold"/>
+      <ChildBand Name="Child2" Top="60.97" Width="718.2" Height="18.9"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="84.13" Width="718.2" Height="245.7" Border.Lines="All" Border.Color="Maroon" CanGrow="true" DataSource="FilterEmployees" Filter="[Month] == [FilterEmployees.Month]">
+      <TextObject Name="Text2" Width="718.2" Height="37.8" Border.Lines="All" Border.Color="Maroon" Fill="LinearGradient" Fill.StartColor="IndianRed" Fill.EndColor="Maroon" Fill.Angle="90" Fill.Focus="0.52" Fill.Contrast="1" Text="[FilterEmployees.FirstName] [FilterEmployees.LastName]" Padding="10, 0, 2, 0" VertAlign="Center" Font="Tahoma, 12pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="Text13" Left="9.45" Top="66.15" Width="387.45" Height="18.9" Text="Month : [FilterEmployees.Month]" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="9.45" Top="179.55" Width="387.45" Height="18.9" Text="Salary : [FilterEmployees.Salary]" Font="Arial, 10pt"/>
+      <TextObject Name="Text15" Left="9.45" Top="122.85" Width="387.45" Height="18.9" Text="Hire Date : [FilterEmployees.HireDate]" Font="Arial, 10pt"/>
+      <TextObject Name="Text16" Left="9.45" Top="94.5" Width="387.45" Height="18.9" Text="City : [FilterEmployees.City]" Font="Arial, 10pt"/>
+      <TextObject Name="Text17" Left="9.45" Top="151.2" Width="387.45" Height="18.9" Text="Hours Worked : [FilterEmployees.HoursWorked]" Font="Arial, 10pt"/>
+      <PictureObject Name="Picture1" Left="548.1" Top="56.7" Width="151.2" Height="170.1" Border.Lines="All" Border.Color="Red" DataColumn="FilterEmployees.Photo"/>
+      <ChildBand Name="Child1" Top="334.1" Width="718.2" Height="9.45"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="347.82" Width="718.2" Height="56.7" Fill.Color="WhiteSmoke" CanGrow="true">
+      <TextObject Name="Text12" Left="9.45" Width="217.35" Height="28.35" Cursor="Hand" Hyperlink.Value="https://www.fast-report.com/en/product/fast-report-net/" Text="Generated by FastReport .NET" VertAlign="Center" Font="Tahoma, 8pt, style=Underline" TextFill.Color="Blue"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

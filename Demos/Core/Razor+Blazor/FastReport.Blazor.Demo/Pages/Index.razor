@@ -1,0 +1,14 @@
+﻿@page "/"
+@page "/{ReportName}"
+@using System.IO;
+@using System.Data;
+
+<WebReportContainer WebReport="@UserWebReport" />
+
+@code {
+    [Parameter]
+    public string ReportName { get; set; }
+
+    public WebReport UserWebReport { get; set; }
+
+}

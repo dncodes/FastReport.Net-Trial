@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rtf2frx", "rtf2frx.csproj", "{E30F624A-6711-4CD6-8405-7DEE7E77464A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D} = {7C64FBDC-25E5-47FF-B6F8-443256745E2D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastReport", "..\..\..\FastReport\FastReport.csproj", "{7C64FBDC-25E5-47FF-B6F8-443256745E2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Academic|Any CPU = Academic|Any CPU
+		Basic|Any CPU = Basic|Any CPU
+		Community|Any CPU = Community|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+		WinForms|Any CPU = WinForms|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Academic|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Academic|Any CPU.Build.0 = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Basic|Any CPU.ActiveCfg = Release|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Basic|Any CPU.Build.0 = Release|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Community|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Community|Any CPU.Build.0 = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Test|Any CPU.ActiveCfg = Demo|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.Test|Any CPU.Build.0 = Demo|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.WinForms|Any CPU.ActiveCfg = Release|Any CPU
+		{E30F624A-6711-4CD6-8405-7DEE7E77464A}.WinForms|Any CPU.Build.0 = Release|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Academic|Any CPU.ActiveCfg = Academic|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Academic|Any CPU.Build.0 = Academic|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Basic|Any CPU.ActiveCfg = Test|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Basic|Any CPU.Build.0 = Test|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Community|Any CPU.ActiveCfg = Community|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Community|Any CPU.Build.0 = Community|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.Test|Any CPU.Build.0 = Test|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.WinForms|Any CPU.ActiveCfg = WinForms|Any CPU
+		{7C64FBDC-25E5-47FF-B6F8-443256745E2D}.WinForms|Any CPU.Build.0 = WinForms|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12D3E5FE-3C67-476B-9586-391C0BF83C94}
+	EndGlobalSection
+EndGlobal

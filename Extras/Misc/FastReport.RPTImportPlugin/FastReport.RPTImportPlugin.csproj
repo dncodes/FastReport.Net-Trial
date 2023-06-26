@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net472</TargetFramework>
+
+    <Product>FastReport.RPTImportPlugin</Product>
+    <Copyright>Copyright © Fast Reports Inc. 2023</Copyright>
+    <Authors>Fast Reports Inc.</Authors>
+    <Company>Fast Reports Inc.</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.Shared\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\EndUserDesigner\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Compat">
+      <HintPath>..\..\..\EndUserDesigner\bin\Debug\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.DataVisualization">
+      <HintPath>..\..\..\EndUserDesigner\bin\Debug\FastReport.DataVisualization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

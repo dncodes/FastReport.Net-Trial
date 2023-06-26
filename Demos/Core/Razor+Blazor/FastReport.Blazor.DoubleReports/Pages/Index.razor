@@ -1,0 +1,83 @@
+﻿@page "/"
+@using System.IO;
+@using System.Data;
+
+ <div style="display:flex;flex-direction:column;">
+     <div style="display:flex;flex-direction:row;">
+          <div style="display:flex;flex-direction:column;">
+        <select style= "margin-left:370px;" @onclick=ChangeReport1() @bind="@firstReport">
+                <option>Simple List.frx</option>
+                <option>Chart.frx</option>
+                <option>Filter Employees.frx</option>
+        </select>
+        @if (@firstReport == "Filter Employees.frx")
+        {
+        <select style= "margin-left:400px;" @onclick=Filter1() @bind="@Select1">
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+        </select>
+        }
+        </div>
+          <div style="display:flex;flex-direction:column;">
+        <select style= "margin-left:614px;" @onclick=ChangeReport2() @bind="@secondReport">
+                <option>Simple List.frx</option>
+                <option>Chart.frx</option>
+                <option>Filter Employees.frx</option>
+        </select>
+        @if (@secondReport == "Filter Employees.frx")
+        {
+        <select style= "margin-left:681px;" @onclick=Filter2() @bind="@Select2">
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+        </select>
+        }
+         </div>
+        </div> 
+    <div style="display:flex;flex-direction:row;">
+    <WebReportContainer WebReport="@UserWebReport"/>
+
+    <WebReportContainer WebReport="@UserWebReport2"/>
+    </div>
+</div>
+
+
+@code {
+    
+    [Parameter]
+    public string Select1 { get; set; } = "September";
+
+    [Parameter]
+    public string Select2 { get; set; } = "October";
+
+    [Parameter]
+    public string firstReport { get; set; } = "Filter Employees.frx";
+
+    [Parameter]
+    public string secondReport { get; set; } = "Filter Employees.frx";
+
+    public EventCallback Filter1()
+    {
+        UserWebReport.Report.SetParameterValue("Month", Select1);
+        return default;
+    }
+    public EventCallback Filter2()
+    {
+        UserWebReport2.Report.SetParameterValue("Month", Select2);
+        return default;
+    }
+    public EventCallback ChangeReport1(){
+
+        UserWebReport.Report.Load(Path.Combine(directory,firstReport));
+        OnParametersSet();
+        return default; 
+    }
+
+    public EventCallback ChangeReport2(){
+
+        UserWebReport2.Report.Load(Path.Combine( directory, secondReport));
+        return default;
+    }
+
+}
